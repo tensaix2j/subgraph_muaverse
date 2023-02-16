@@ -1,6 +1,5 @@
 {
-  "network": "avax_fuji",
-  
+  "network": "fuji",
   
   "address_fist_collection_v1": "0x0000000000000000000000000000000000000000",
   "startBock_first_collections_v1": 18954594,
@@ -8,13 +7,13 @@
   "address_factory": "0x0000000000000000000000000000000000000000",
   "startBlock_factory": 18954594,
 
-  "address_factory_v3": "0x47049a8CE920F05bdAD1ECF65A1db47BCBB7Da10",
+  "address_factory_v3": "0x47049a8ce920f05bdad1ecf65a1db47bcbb7da10",
   "startBlock_factory_v3": 18959828,
 
   "address_old_committee": "0x0000000000000000000000000000000000000000",
   "startBlock_old_committee": 18954594,
 
-  "address_committee": "0xD0e2B4592C392F337C52B8B0Feb023054Ecf5C51",
+  "address_committee": "0xd0e2b4592c392f337c52b8b0feb023054ecf5c51",
   "startBlock_committee": 18954594,
   
   "address_marketplace": "0x0000000000000000000000000000000000000000",
@@ -29,13 +28,13 @@
   "address_bid_v2": "0x0000000000000000000000000000000000000000",
   "startBlock_bid_v2": 18954594,
   
-  "address_rarity": "0x0000000000000000000000000000000000000000",
-  "startBlock_rarity": 18954594,
-    
+  "address_rarity": "0x9b149112f65ea28A748EAEe0F53e8142aD38b52E",
+  "startBlock_rarity": 18978275,
 
-  "address_rarities_with_oracle": "0x57b938e633284B923E63C2d9C97F4A86dDC66FBe",
+
+  "address_rarities_with_oracle": "0x57b938e633284b923e63c2d9c97f4a86ddc66fbe",
   "startBlock_rarities_with_oracle": 18953987,
   
-  "address_collection_manager": "0x594d07Ff8006f83b9389D24f673b69822eC6CdFe",
+  "address_collection_manager": "0x594d07ff8006f83b9389d24f673b69822ec6cdfe",
   "startBlock_collection_manager": 18954706
 }
