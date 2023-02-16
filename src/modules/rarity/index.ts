@@ -6,8 +6,10 @@ let RARITY_MUMBAI = '0x8eabf06f6cf667915bff30138be70543bce2901a'
 let RARITY_MATIC = '0x17113b44fdd661a156cc01b5031e3acf72c32eb3'
 let RARITIES_WITH_ORACLE_MUMBAI = '0xb9957735bbe6d42585058af11aa72da8ead9043a'
 let RARITIES_WITH_ORACLE_MATIC = '0xa9158e22f89bb3f69c5600338895cb5fb81e5090'
+let RARITIES_WITH_ORACLE_AVAX_FUJI = '0x57b938e633284b923e63c2d9c97f4a86ddc66fbe'
 
 export function getRarityAddress(): Address {
+  
   let network = dataSource.network()
   let addressString = network == 'mumbai' ? RARITY_MUMBAI : network == 'matic' ? RARITY_MATIC : ZERO_ADDRESS
 
@@ -15,8 +17,21 @@ export function getRarityAddress(): Address {
 }
 
 export function getRaritiesWithOracleAddress(): Address {
+  
   let network = dataSource.network()
-  let addressString = network == 'mumbai' ? RARITIES_WITH_ORACLE_MUMBAI : network == 'matic' ? RARITIES_WITH_ORACLE_MATIC : ZERO_ADDRESS
+  let addressString;
+
+  if ( network == 'mumbai') {
+    addressString = RARITIES_WITH_ORACLE_MUMBAI;
+  } else if ( network == 'matic') {
+    addressString = RARITIES_WITH_ORACLE_MATIC;
+  } else if ( network == 'avax_fuji') {
+    addressString = RARITIES_WITH_ORACLE_AVAX_FUJI;
+  
+  } else {
+    addressString = ZERO_ADDRESS;
+  }
+
 
   return Address.fromString(addressString)
 }

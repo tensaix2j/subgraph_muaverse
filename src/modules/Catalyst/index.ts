@@ -11,6 +11,10 @@ export function getCatalystBase(): string {
     return 'https://peer.decentraland.zone'
   }
 
+  if (network == 'avax_c' || network == 'avax_fuji') {
+    return 'https://labs.muadao.build'
+  }
+
   log.debug('Could not find catalyst base. Invalid network {}', [network])
   return ''
 }

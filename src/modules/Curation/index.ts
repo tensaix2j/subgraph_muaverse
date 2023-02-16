@@ -16,5 +16,9 @@ export function getBlockWhereRescueItemsStarted(): BigInt {
     return BigInt.fromI32(19885000)
   }
 
+  if (network == 'avax_fuji') {
+    return BigInt.fromI32(18954594)
+  }
+
   return BigInt.fromI32(I32.MAX_VALUE)
 }
