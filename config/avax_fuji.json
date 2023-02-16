@@ -1,0 +1,41 @@
+{
+  "network": "avax_fuji",
+  
+  
+  "address_fist_collection_v1": "0x0000000000000000000000000000000000000000",
+  "startBock_first_collections_v1": 18954594,
+  
+  "address_factory": "0x0000000000000000000000000000000000000000",
+  "startBlock_factory": 18954594,
+
+  "address_factory_v3": "0x47049a8CE920F05bdAD1ECF65A1db47BCBB7Da10",
+  "startBlock_factory_v3": 18959828,
+
+  "address_old_committee": "0x0000000000000000000000000000000000000000",
+  "startBlock_old_committee": 18954594,
+
+  "address_committee": "0xD0e2B4592C392F337C52B8B0Feb023054Ecf5C51",
+  "startBlock_committee": 18954594,
+  
+  "address_marketplace": "0x0000000000000000000000000000000000000000",
+  "startBlock_marketplace": 18954594,
+
+  "address_marketplace_V2": "0x0000000000000000000000000000000000000000",
+  "startBlock_marketplace_V2": 18954594,
+  
+  "address_bid": "0x0000000000000000000000000000000000000000",
+  "startBlock_bid": 18954594,
+  
+  "address_bid_v2": "0x0000000000000000000000000000000000000000",
+  "startBlock_bid_v2": 18954594,
+  
+  "address_rarity": "0x0000000000000000000000000000000000000000",
+  "startBlock_rarity": 18954594,
+    
+
+  "address_rarities_with_oracle": "0x57b938e633284B923E63C2d9C97F4A86dDC66FBe",
+  "startBlock_rarities_with_oracle": 18953987,
+  
+  "address_collection_manager": "0x594d07Ff8006f83b9389D24f673b69822eC6CdFe",
+  "startBlock_collection_manager": 18954706
+}
