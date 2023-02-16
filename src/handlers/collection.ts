@@ -114,24 +114,12 @@ export function handleAddItem(event: AddItem): void {
   let rarity = Rarity.load(contractItem.rarity)
   let creationFee = BigInt.fromI32(0)
 
-  if (!rarity) {
-    log.warning('Undefined rarity {} for collection {} and item {}', [contractItem.rarity, collectionAddress, itemId.toString()])
-  } else {
-    creationFee = rarity.price
-
-    if (rarity.currency == 'USD') {
-      let raritiesWithOracle = RaritiesWithOracle.bind(getRaritiesWithOracleAddress())
-      let result = raritiesWithOracle.getRarityByName(rarity.name)
-
-      creationFee = result.price
-    }
-  }
-
+  
   let item = new Item(id)
   item.creator = collection.creator
   item.blockchainId = event.params._itemId
   item.collection = collectionAddress
-  item.creationFee = creationFee
+  item.creationFee = BigInt.fromI32(0)
   item.rarity = contractItem.rarity
   item.available = contractItem.maxSupply
   item.totalSupply = contractItem.totalSupply
